@@ -6,7 +6,7 @@ The code here has the code for the webapp deployment. For the actual model devel
 
 (NOTE: I had to run the notebook in the Kaggle environment to get access to TPUs)
 
-## Link to video:
+## Link to video: https://youtu.be/qaFfuIZ-jVk
 
 ## Link to working project: https://mlflowerclass-2i7bvpzgsq-uc.a.run.app
 
@@ -14,4 +14,4 @@ The code here has the code for the webapp deployment. For the actual model devel
 
 ## Other notes:
 
-I could not upload my trained model to the Github as its file size exceeded 200 MB, which is GitHub's maximum file size limit
+I could not upload my trained model to the Github as its file size exceeded 200 MB, which is GitHub's maximum file size limit. The name of my trained model was `final_model.m5`, which you may see in some of the code
