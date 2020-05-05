@@ -1,5 +1,7 @@
 # Final Project: Flower Classification
 
+The code here has the code for the webapp deployment. For the actual model development code, check out the iPython notebook link below
+
 ## Link to the notebook: https://www.kaggle.com/harshadeshpande/4622-finalproject-harsh
 
 (NOTE: I had to run the notebook in the Kaggle environment to get access to TPUs)
