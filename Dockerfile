@@ -2,7 +2,7 @@ FROM python:3
 
 WORKDIR /app
 
-COPY /src /app
+COPY . /app
 
 WORKDIR /app
 
