@@ -6,6 +6,8 @@
 
 ## Link to video:
 
+## Link to working project: https://mlflowerclass-2i7bvpzgsq-uc.a.run.app
+
 ## Other notes:
 
 I could not upload my trained model to the Github as its file size exceeded 200 MB, which is GitHub's maximum file size
