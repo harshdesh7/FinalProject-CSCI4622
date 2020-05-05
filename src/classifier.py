@@ -5,6 +5,7 @@ import os
 from bottle import route, request, run, static_file, template
 import base64
 
+#The Web server
 
 @route('/', method='GET')
 def serve():
@@ -16,12 +17,12 @@ def classify_img():
     name, ext = os.path.splitext(data.filename)
     if ext not in ('.png', '.jpg', '.jpeg'):
         return static_file('error.html', root='')
-    bytes = data.file.read()
+    bytes = data.file.read() #processing input image
     d64 = base64.b64encode(bytes)
     im = tf.image.decode_jpeg(bytes, channels=3)
     proc = tf.image.resize(im, [192,192]) / 255
     proc = tf.reshape(proc, [1,192,192,3])
-    pred = mod.predict(proc)
+    pred = mod.predict(proc) #put into model
     ind = np.argmax(pred, axis=-1)
     label = CLASSES[ind[0]]
     return template('''<!DOCTYPE html>
